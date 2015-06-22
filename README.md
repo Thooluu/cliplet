@@ -4,7 +4,7 @@ Shittyclippy
 A wrapped clippy(js) bookmarklet. Powered by [clippyjs](https://github.com/smore-inc/clippy.js)
 
 #Why?
-Because of nostalgia. This project is meant to be minimal since there are countless other bookmarlets out there that are actually useful.
+Because of nostalgia. This project is meant to be minimal since there are countless other bookmarklets out there that are actually useful.
 
 #How to install
 To install, simply copy the contents of bin/shittyclippy, create a new bookmark, and paste the content as the bookmark's url. Click the bookmark and shittyclippy agent will apear.
