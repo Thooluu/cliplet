@@ -1,7 +1,7 @@
 Shittyclippy
 =======
 
-A wrapped clippy(js) bookmarklet. Powered by [clippyjs](https://github.com/smore-inc/clippy.js)
+A wrapped shittyclippy(js) bookmarklet. Powered by [clippyjs](https://github.com/smore-inc/clippy.js)
 
 #Why?
 Because of nostalgia. This project is meant to be minimal since there are countless other bookmarklets out there that are actually useful.
