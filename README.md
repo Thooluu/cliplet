@@ -1,19 +1,19 @@
-Cliplet
+Shittyclippy
 =======
 
 A wrapped clippy(js) bookmarklet. Powered by [clippyjs](https://github.com/smore-inc/clippy.js)
 
 #Why?
-Because of nostalgia. This project is ment to be minimal since there are countless amount of bookmarklets with really no reason to reinvent the weel.
+Because of nostalgia. This project is meant to be minimal since there are countless other bookmarlets out there that are actually useful.
 
 #How to install
-To install, simply copy the contents of bin/cliplet, create a new book mark, and paste the content as the book marks url. Click the bookmark and clippy agent will apear.
+To install, simply copy the contents of bin/shittyclippy, create a new bookmark, and paste the content as the bookmark's url. Click the bookmark and shittyclippy agent will apear.
 
 #Configuration
-Currently the cliplet does very little besides display a message every minute or two. However it could do alot more if you are willing to configure or build the project yourself.
+Currently shittyclippy does very little besides display an unhelpful message every minute or two. However, it could do alot more if you are willing to configure or build the project yourself. As a side note, double-clicking shittyclippy will show an animation.
 
 ##Page configuration
-The easiest way to configure cliplet is simply by changing the page cliplet object before clippy loads. This kind of breaks having a self contained application so it is not recommended.
+The easiest way to configure shittyclippy is by changing the page cliplet object before shittyclippy loads. This kind of breaks having a self-contained application so it is not recommended.
 
 To apply a set of options onto a page simply use the template below.
 ```javascript
@@ -89,15 +89,15 @@ cliplet = {
 		 */
 		chatter: [
 		  'Press the print screen key and paste the image into an image editor to save your work.',
-		  'Try clicking on a link on to navigate.',
-		  'Can\'t find what you are looking for? Try asking Jeves.'
+		  'Try clicking on a link to navigate.',
+		  'Can't find what you are looking for? Try Ask Jeeves.'
 		]
 	}
 };
 ```
 
 ##Build configuration
-The better way to configure cliplet is to build the configuration into the bookmarklet. In order to do so, you must have node and npm installed.
+The better way to configure shittyclippy is to build the configuration into the bookmarklet. In order to do so, you must have node and npm installed.
 
 After node and npm are installed clone this repository.
 
@@ -121,10 +121,10 @@ gulp
 Your artifact will appear inside of the bin folder.
 
 ###Note
-Because of the simplicity of cliplet and the revealing module type pattern used, there is not really an api. Configuration is provided as just an ability to fiddle with the defaults unless core code is changed.
+Because of the simplicity of shittyclippy and the revealing module type pattern used, there is not really an api. Configuration is provided as just an ability to fiddle with the defaults unless core code is changed.
 
 ##Examples
-A simple example that could make clippy more useful. This can be used for both configuration types.
+A simple example that could make shittyclippy more useful. This can be used for both configuration types.
 ```javascript
 cliplet.defaults.say = function (options, done) {
 	$.getJSON('http://query.yahooapis.com/v1/public/yql?q=select%20%2a%20from%20yahoo.finance.quotes%20where%20symbol%20in%20%28%22GOOG%22%29&env=store://datatables.org/alltableswithkeys&format=json', function (data) {
@@ -135,4 +135,4 @@ cliplet.defaults.say = function (options, done) {
 };
 ```
 
-This example will quote the opening and current google price at random intervals.
+This example will quote the opening and current Google price at random intervals.
